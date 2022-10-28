@@ -3,7 +3,7 @@ import time
 from models_api import enviar_email, checar_dia, deletar_arquivo, checar_arquivo, criar_arquivo
 from models import ConectandoBD
 
-while True:
+def main():
     bd = ConectandoBD()
     listaEmail = bd.obterListaDeEmail()
     if checar_dia() and checar_arquivo():
